@@ -3,68 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahesh Jadhav | DevOps Engineer</title>
+    <title>Mahesh Jadhav | DevOps Expert</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap');
+        body { font-family: 'Space Grotesk', sans-serif; background-color: #050505; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .gradient-text { background: linear-gradient(90.13deg, #60A5FA 0.11%, #34D399 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .blob { position: absolute; width: 300px; height: 300px; background: rgba(59, 130, 246, 0.2); filter: blur(80px); border-radius: 50%; z-index: -1; animation: move 20s infinite alternate; }
+        @keyframes move { from { transform: translate(-10%, -10%); } to { transform: translate(20%, 20%); } }
+    </style>
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans">
+<body class="text-slate-200">
 
-    <nav class="bg-blue-600 p-4 text-white shadow-lg sticky top-0 z-50">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-xl font-bold">Mahesh Jadhav</h1>
-            <div class="space-x-4">
-                <a href="#about" class="hover:underline">About</a>
-                <a href="#skills" class="hover:underline">Skills</a>
-                <a href="#projects" class="hover:underline">Projects</a>
+    <div class="blob top-20 left-10"></div>
+    <div class="blob bottom-20 right-10" style="background: rgba(16, 185, 129, 0.1);"></div>
+
+    <nav class="fixed w-full z-50 top-0 py-6 px-10">
+        <div class="max-w-6xl mx-auto flex justify-between items-center glass rounded-2xl py-3 px-8">
+            <span class="text-xl font-bold tracking-tighter">MAHESH<span class="text-blue-500">.</span></span>
+            <div class="hidden md:flex space-x-10 text-xs uppercase tracking-widest font-medium">
+                <a href="#about" class="hover:text-blue-400 transition">About</a>
+                <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+                <a href="#projects" class="hover:text-blue-400 transition">Work</a>
+                <a href="mailto:maheshrav015@gmail.com" class="text-blue-400">Contact</a>
             </div>
         </div>
     </nav>
 
-    <header class="bg-white py-20 px-6 text-center">
-        <h2 class="text-4xl font-extrabold text-blue-600">Hello, I'm Mahesh</h2>
-        <p class="mt-4 text-lg text-gray-600">Aspiring DevOps Engineer | BCA Graduate | Tech Enthusiast</p>
-        <div class="mt-6">
-            <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full font-semibold">#90DaysOfDevOps</span>
-        </div>
-    </header>
-
-    <section id="about" class="container mx-auto py-16 px-6">
-        <h3 class="text-2xl font-bold border-b-4 border-blue-600 inline-block mb-8">About Me</h3>
-        <p class="text-lg leading-relaxed">
-            मी नाशिकचा रहिवासी असून माझे **BCA** पूर्ण झाले आहे. सध्या मी **DevOps** आणि क्लाउड तंत्रज्ञान शिकण्यावर लक्ष केंद्रित करत आहे. 
-            मला नवनवीन टेक्नॉलॉजी शिकायला आणि प्रॉब्लेम सॉल्व्ह करायला आवडते.
+    <section class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+        <div class="glass px-4 py-1 rounded-full text-xs font-bold text-emerald-400 mb-6 tracking-widest uppercase">Available for DevOps Roles</div>
+        <h1 class="text-6xl md:text-8xl font-bold mb-6 tracking-tighter">I Build <span class="gradient-text">Scalable</span> <br> Systems.</h1>
+        <p class="max-w-xl text-slate-400 text-lg md:text-xl leading-relaxed mb-10">
+            मी महेश जाधव, एक **DevOps Engineer**. मी सॉफ्टवेअर डिप्लॉयमेंटच्या प्रक्रिया सुलभ आणि वेगवान बनवतो.
         </p>
+        <div class="flex gap-4">
+            <a href="#projects" class="bg-blue-600 hover:bg-blue-700 px-10 py-4 rounded-xl font-bold transition-all shadow-xl shadow-blue-900/40">बघून घ्या माझे काम</a>
+        </div>
     </section>
 
-    <section id="skills" class="bg-gray-200 py-16 px-6">
-        <div class="container mx-auto text-center">
-            <h3 class="text-2xl font-bold mb-10">Technical Skills</h3>
-            <div class="flex flex-wrap justify-center gap-4">
-                <span class="bg-white shadow-md px-6 py-3 rounded-lg font-bold">Linux</span>
-                <span class="bg-white shadow-md px-6 py-3 rounded-lg font-bold">Git & GitHub</span>
-                <span class="bg-white shadow-md px-6 py-3 rounded-lg font-bold">Docker</span>
-                <span class="bg-white shadow-md px-6 py-3 rounded-lg font-bold">GitHub Actions</span>
-                <span class="bg-white shadow-md px-6 py-3 rounded-lg font-bold">CI/CD Pipelines</span>
+    <section id="skills" class="py-20 container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="glass p-10 rounded-3xl hover:bg-white/5 transition-all">
+                <i class="fa-solid fa-server text-blue-500 text-3xl mb-6"></i>
+                <h4 class="text-xl font-bold mb-4">Infrastructure</h4>
+                <p class="text-slate-400 text-sm">Linux Administration, Docker Containerization, and Kubernetes orchestration.</p>
+            </div>
+            <div class="glass p-10 rounded-3xl hover:bg-white/5 transition-all border-t-2 border-blue-500/30">
+                <i class="fa-solid fa-code-merge text-emerald-500 text-3xl mb-6"></i>
+                <h4 class="text-xl font-bold mb-4">CI/CD Automation</h4>
+                <p class="text-slate-400 text-sm">GitHub Actions वापरून ऑटोमॅटिक टेस्टिंग आणि डिप्लॉयमेंट करणे.</p>
+            </div>
+            <div class="glass p-10 rounded-3xl hover:bg-white/5 transition-all">
+                <i class="fa-solid fa-shield-halved text-purple-500 text-3xl mb-6"></i>
+                <h4 class="text-xl font-bold mb-4">Monitoring</h4>
+                <p class="text-slate-400 text-sm">सिस्टमचे आरोग्य तपासणे आणि Logs मॅनेज करणे.</p>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="container mx-auto py-16 px-6">
-        <h3 class="text-2xl font-bold border-b-4 border-blue-600 inline-block mb-8">Projects</h3>
-        <div class="grid md:grid-cols-2 gap-6">
-            <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-blue-500">
-                <h4 class="font-bold text-xl mb-2">#90DaysOfDevOps Challenge</h4>
-                <p class="text-gray-600">DevOps मधील विविध टूल्स जसे की Docker, Jenkins आणि Kubernetes यांचा सराव करण्यासाठी हे चॅलेंज पूर्ण करत आहे.</p>
-            </div>
-            <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-green-500">
-                <h4 class="font-bold text-xl mb-2">Automated Portfolio Deploy</h4>
-                <p class="text-gray-600">GitHub Actions वापरून स्वतःची वेबसाईट आपोआप होस्ट करण्याचा प्रोजेक्ट यशस्वीरीत्या पूर्ण केला.</p>
+    <section id="projects" class="py-20 container mx-auto px-6">
+        <h3 class="text-4xl font-bold mb-12 tracking-tight">प्रोजेक्ट्स <span class="text-slate-600">/ Projects</span></h3>
+        <div class="glass group relative overflow-hidden rounded-[2.5rem] p-1">
+            <div class="bg-slate-900/50 rounded-[2.4rem] p-12 flex flex-col md:flex-row items-center gap-10">
+                <div class="flex-1">
+                    <span class="text-blue-500 font-mono text-sm mb-4 block">DevOps Case Study</span>
+                    <h4 class="text-3xl font-bold mb-4">#90DaysOfDevOps Journey</h4>
+                    <p class="text-slate-400 mb-8 leading-relaxed">
+                        या प्रवासात मी शिकलो की कसे एका साध्या कोडला Dockerize करून त्याला GitHub Actions द्वारे क्लाउडवर ऑटोमॅटिकली डिप्लॉय करायचे.
+                    </p>
+                    <a href="https://github.com/mahesh5752" class="text-white border-b border-blue-500 pb-1 hover:text-blue-400 transition">GitHub वर पहा →</a>
+                </div>
+                <div class="flex-1 w-full bg-gradient-to-br from-blue-600 to-emerald-600 h-64 rounded-2xl flex items-center justify-center">
+                    <i class="fa-brands fa-github text-9xl text-white/20"></i>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-gray-800 text-white py-10 text-center">
-        <p>Contact me at: your-email@example.com</p>
-        <p class="mt-2 text-gray-400">© 2026 Mahesh Jadhav | Nashik, MH</p>
+    <footer class="py-20 text-center border-t border-white/5">
+        <p class="text-slate-500 text-sm mb-6 uppercase tracking-[0.5em]">Nashik • Maharashtra</p>
+        <div class="flex justify-center gap-8 text-2xl text-slate-400">
+            <a href="https://github.com/mahesh5752" class="hover:text-white transition"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:maheshrav015@gmail.com" class="hover:text-blue-500 transition"><i class="fa-solid fa-envelope"></i></a>
+        </div>
     </footer>
 
 </body>
